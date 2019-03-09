@@ -1,0 +1,24 @@
+Example (two compartment PKPD model)
+------------------------------------
+
+1) Load PKPD.mat by typing 'load PKPD.mat' in the MATLAB prompt. This 
+   loads the SimBiology model (sbmodel) and a data table (dataTable) 
+   into the workspace.
+ 
+2) Start the app by typing 'AliasingScore(sbmodel, dataTable)' in the
+   MATLAB prompt.
+
+3) Configure the app:
+   a) Switch to the 'Data Info' tab and associate data columns with 
+      model components as follows:
+      for 'Drug_Central'    choose 'Central.Drug_Central', 
+      for 'Drug_Peripheral' choose 'Peripheral.Drug_Peripheral', and
+      for 'DOSE'            choose 'Peripheral.Dose_Peripheral'
+      from the respective drop down menu in the 'Data Association' column.
+   b) Switch to the 'Component Info' tab and select 'Central', 
+      'Cl_Central', and 'Q12' to be included in the aliasing score.
+   c) Switch to the 'Aliasing Score' tab and click the 'Simulate' button
+   d) Toggle the check box 'Show Aliasing Score for Current Response Only'
+      to see the aliasing effect of 'Central' and 'Q12' for the 
+      'Central.Drug_Central' response.
+
